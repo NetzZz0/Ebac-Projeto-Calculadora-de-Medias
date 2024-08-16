@@ -57,7 +57,7 @@ function atualizaMediaFinal() {
 
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-finalValor').innerHTML = mediaFinal;
+    document.getElementById('media-finalValor').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media-finalResultado').innerHTML = mediaFinal >= notaMinina ? spamAprovado : spamReprovado;
 }
 
